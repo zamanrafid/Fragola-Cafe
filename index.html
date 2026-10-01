@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Fragola Cafe 🍓 | Artisan Coffee, Breakfast & Desserts — Open 7AM-11PM</title>
+<meta name="description" content="Fragola Cafe — artisan espresso, strawberry signature lattes, all-day breakfast, fresh desserts, fast delivery, cozy work space, terrace & events. Rated 4.9★. Book a table!" />
+<meta name="theme-color" content="#E94E5A" />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍓</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Fragola Cafe","servesCuisine":["Coffee","Breakfast","Desserts"],"priceRange":"$-$$","telephone":"+1-001-234-567","address":{"@type":"PostalAddress","streetAddress":"123 Berry Street","addressLocality":"Downtown"},"openingHours":"Mo-Su 07:00-23:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"2513"}}
+</script>
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="cup"><div class="steam"><span></span><span></span><span></span></div>🍓<div class="coffee-fill"></div></div>
+  <p>Fragola Cafe <b>brewing…</b></p>
+</div>
+<div class="progress" id="progress"></div>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>📍 123 Berry Street, Downtown • <b id="openStatus">Open Now</b> 7AM – 11PM</span>
+    <span class="topbar-right">📞 <a href="tel:+10012345678">+1 (00) 123-4567</a> • ☕ Free WiFi • 🐾 Pet Friendly • 🛵 Delivery 5km</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo">🍓 <span class="grad">Fragola</span> Cafe</a>
+    <nav class="nav" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#offers" class="nav-link">Offers</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#team" class="nav-link">Team</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#visit" class="nav-link">Visit</a>
+      <a href="#reserve" class="btn btn-primary nav-cta shine">✨ Book a Table</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn cart-btn" id="cartOpen" aria-label="Open cart">🛒<i id="cartCountMini">0</i></button>
+      <a href="tel:+10012345678" class="btn btn-call">📞 Call</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+<!-- HERO -->
+<section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="beans"><span>☕</span><span>🍓</span><span>🫘</span><span>🍰</span><span>🥐</span></div>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="badge pulse">✨ Rated 4.9 ★★★★★ • 2,500+ reviews • <span class="live-dot"></span> Open Today</div>
+      <h1 class="anim-up">Where Every Cup Tells a <em class="grad">Strawberry Story</em> 🍓</h1>
+      <p class="typing-wrap">We serve <b class="typing" id="typing">Strawberry Cloud Latte</b><span class="caret">|</span></p>
+      <p class="lead">Artisan espresso, signature Fragola strawberry drinks, all-day breakfast & fresh desserts — cozy work corners, family zone + sunny terrace.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary btn-lg shine">View Menu ☕</a>
+        <a href="#reserve" class="btn btn-outline btn-lg">📅 Book a Table</a>
+        <a href="https://wa.me/10012345678?text=Hi%20Fragola!%20I%20want%20to%20order" target="_blank" rel="noopener" class="btn btn-whats btn-lg">💬 WhatsApp Order</a>
+      </div>
+      <div class="hero-info glass">
+        <div><strong><span class="count" data-count="12">0</span>+</strong><small>Years Craft</small></div>
+        <div><strong><span class="count" data-count="40">0</span>+</strong><small>Menu Items</small></div>
+        <div><strong><span class="count" data-count="25">0</span>K+</strong><small>Cups / Month</small></div>
+        <div><strong>100%</strong><small>Arabica Fresh</small></div>
+      </div>
+      <div class="hero-mini">🚚 Delivery 15 min • ⭐ 4.9 rating • 🌱 Vegan options • 📶 Work friendly</div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap tilt">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80&auto=format&fit=crop" alt="Fragola signature latte art" fetchpriority="high" />
+        <div class="steam-wrap"><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-card-float float-1 float-anim">🍓 <div><b>Strawberry Cloud Latte</b><br><span>★★★★★ • $5.90 • Bestseller</span></div></div>
+      <div class="hero-card-float float-2 float-anim2">🔥 <div><b>Fresh at 6 AM</b><br><span>Croissants & Tiramisu</span></div></div>
+      <div class="hero-card-float float-3">🛵 <div><b>15 min delivery</b><span> • Free over $20</span></div></div>
+    </div>
+  </div>
+  <div class="marquee"><div class="marquee-track">
+    <span>🍓 STRAWBERRY CLOUD LATTE</span><span>☕ 100% ARABICA</span><span>🥐 BAKED 6AM DAILY</span><span>🎂 FRESH TIRAMISU</span><span>🚚 FAST DELIVERY</span><span>📶 FREE WIFI</span>
+    <span>🍓 STRAWBERRY CLOUD LATTE</span><span>☕ 100% ARABICA</span><span>🥐 BAKED 6AM DAILY</span><span>🎂 FRESH TIRAMISU</span><span>🚚 FAST DELIVERY</span><span>📶 FREE WIFI</span>
+  </div></div>
+</section>
+
+<!-- STRIP -->
+<section class="strip">
+  <div class="container strip-grid">
+    <div class="strip-card">🚚 <div><b>Fast Delivery</b><span>15 min • 5 km radius</span></div></div>
+    <div class="strip-card">🌱 <div><b>Fresh & Organic</b><span>Local farms daily</span></div></div>
+    <div class="strip-card">💳 <div><b>Easy Payment</b><span>Card • Cash • Wallet</span></div></div>
+    <div class="strip-card">📶 <div><b>Work Friendly</b><span>WiFi + plugs + quiet zone</span></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-images">
+      <img class="img-main tilt" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80&auto=format&fit=crop" alt="Fragola Cafe interior" loading="lazy" />
+      <img class="img-small float-anim" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80&auto=format&fit=crop" alt="Barista pouring coffee" loading="lazy" />
+      <div class="exp-badge"><b><span class="count" data-count="12">0</span>+</b><span>Years of Craft</span></div>
+      <div class="about-cup">☕<small>Roasted in-house weekly</small></div>
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">🍓 Our Story</span>
+      <h2>A Little Italy in Every Cup, <em class="grad">Born from Strawberries</em></h2>
+      <p><b>Fragola</b> means strawberry in Italian. Since 2013 we blend classic Italian espresso culture with fresh fruity creativity. Beans roasted in-house every week, strawberry syrup made every morning, desserts baked at 6 AM.</p>
+      <div class="timeline">
+        <div><i>2013</i><b>Small kiosk opens</b><span>3 tables, 1 espresso machine ❤️</span></div>
+        <div><i>2018</i><b>Fragola Special born</b><span>Strawberry Cloud Latte goes viral</span></div>
+        <div><i>2026</i><b>Your cozy 2nd home</b><span>Terrace + work zone + events</span></div>
+      </div>
+      <ul class="check-list">
+        <li>✅ In-house roasted single-origin beans (Ethiopia + Colombia)</li>
+        <li>✅ Homemade strawberry syrup & desserts daily</li>
+        <li>✅ Vegan, gluten-free, kid-friendly & halal options</li>
+        <li>✅ Cozy work corners + family zone + pet-friendly terrace</li>
+      </ul>
+      <div class="row-btns">
+        <a href="#visit" class="btn btn-primary">📍 Our Location</a>
+        <a href="#team" class="btn btn-ghost">Meet baristas →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section-cream" id="services">
+  <div class="container">
+    <div class="center"><span class="eyebrow">✨ What we do</span><h2>Services for Every Mood</h2><p class="sub">Dine-in, takeaway, delivery, office & party catering — we got you.</p></div>
+    <div class="cards services">
+      <article class="card glass hover-lift"><div class="s-icon">☕</div><div class="card-body"><h3>Dine-In & Terrace</h3><p>Cozy indoor, quiet work zone & sunny pet-friendly terrace. Plugs everywhere.</p><small>⏰ 7AM-11PM • 📶 200 Mbps WiFi</small></div></article>
+      <article class="card glass hover-lift"><div class="s-icon">🛵</div><div class="card-body"><h3>Fast Delivery</h3><p>Hot & fresh in ~15 min within 5 km. Free delivery over $20.</p><small>📦 Eco packaging • Live tracking</small></div></article>
+      <article class="card glass hover-lift"><div class="s-icon">🎉</div><div class="card-body"><h3>Events & Catering</h3><p>Birthdays, office coffee breaks, weddings. Custom strawberry cake + barista bar.</p><small>👥 Up to 80 guests • Custom menu</small></div></article>
+      <article class="card glass hover-lift"><div class="s-icon">🎁</div><div class="card-body"><h3>Loyalty & Gifts</h3><p>Buy 8 get 1 free. Gift cards, beans to home & brewing classes every Sunday.</p><small>💎 Fragola Club • 10% birthday off</small></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section" id="menu">
+  <div class="container">
+    <div class="center"><span class="eyebrow">☕ Taste the Love</span><h2>Our Menu</h2><p class="sub">Fresh daily. Oat / almond / soy +$0.5 • Extra shot +$0.8 • Prices incl. tax</p>
+      <div class="search-wrap">🔍 <input type="search" id="menuSearch" placeholder="Search menu… try 'strawberry' or 'vegan'" aria-label="Search menu"></div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="espresso">Espresso</button>
+      <button class="tab" data-tab="fragola">🍓 Fragola Specials</button>
+      <button class="tab" data-tab="brewed">Brewed & Cold</button>
+      <button class="tab" data-tab="breakfast">Breakfast</button>
+      <button class="tab" data-tab="dessert">Desserts</button>
+      <button class="tab" data-tab="vegan">🌱 Vegan</button>
+    </div>
+    <div class="menu-panel active" id="panel-espresso"><div class="menu-grid">
+      <div class="menu-item" data-name="espresso classic double"><div><h4>Espresso <span class="tag">Classic</span></h4><p>Double shot, golden crema</p></div><div class="price"><b>$3.20</b><button class="btn btn-sm" data-order="Espresso" data-price="3.2">Add +</button></div></div>
+      <div class="menu-item" data-name="cappuccino milk foam"><div><h4>Cappuccino</h4><p>Espresso, steamed milk, foam</p></div><div class="price"><b>$4.50</b><button class="btn btn-sm" data-order="Cappuccino" data-price="4.5">Add +</button></div></div>
+      <div class="menu-item" data-name="caffe latte milk art"><div><h4>Caffe Latte</h4><p>Silky milk, light foam art</p></div><div class="price"><b>$4.80</b><button class="btn btn-sm" data-order="Caffe Latte" data-price="4.8">Add +</button></div></div>
+      <div class="menu-item" data-name="caramel macchiato vanilla"><div><h4>Caramel Macchiato</h4><p>Vanilla, caramel drizzle</p></div><div class="price"><b>$5.40</b><button class="btn btn-sm" data-order="Caramel Macchiato" data-price="5.4">Add +</button></div></div>
+      <div class="menu-item" data-name="mocha chocolate belgian"><div><h4>Mocha</h4><p>Espresso + Belgian chocolate</p></div><div class="price"><b>$5.20</b><button class="btn btn-sm" data-order="Mocha" data-price="5.2">Add +</button></div></div>
+      <div class="menu-item" data-name="flat white popular ristretto"><div><h4>Flat White <span class="tag hot">Popular</span></h4><p>Double ristretto, velvet milk</p></div><div class="price"><b>$4.90</b><button class="btn btn-sm" data-order="Flat White" data-price="4.9">Add +</button></div></div>
+    </div></div>
+    <div class="menu-panel" id="panel-fragola"><div class="menu-grid">
+      <div class="menu-item special" data-name="strawberry cloud latte signature bestseller"><div><h4>Strawberry Cloud Latte <span class="tag hot">Signature</span></h4><p>Espresso, strawberry cold foam ☁️🍓</p></div><div class="price"><b>$5.90</b><button class="btn btn-sm" data-order="Strawberry Cloud Latte" data-price="5.9">Add +</button></div></div>
+      <div class="menu-item special" data-name="fragola frappe blended cream"><div><h4>Fragola Frappe</h4><p>Blended strawberries, cream</p></div><div class="price"><b>$6.20</b><button class="btn btn-sm" data-order="Fragola Frappe" data-price="6.2">Add +</button></div></div>
+      <div class="menu-item special" data-name="berry rose matcha green"><div><h4>Berry Rose Matcha</h4><p>Ceremonial matcha + berry</p></div><div class="price"><b>$6.00</b><button class="btn btn-sm" data-order="Berry Rose Matcha" data-price="6">Add +</button></div></div>
+      <div class="menu-item special" data-name="strawberry tiramisu latte mascarpone"><div><h4>Strawberry Tiramisu Latte</h4><p>Mascarpone cream, cocoa</p></div><div class="price"><b>$6.40</b><button class="btn btn-sm" data-order="Strawberry Tiramisu Latte" data-price="6.4">Add +</button></div></div>
+      <div class="menu-item special" data-name="iced fragola spritz soda mint new"><div><h4>Iced Fragola Spritz <span class="tag">New</span></h4><p>Espresso, strawberry soda, mint</p></div><div class="price"><b>$5.50</b><button class="btn btn-sm" data-order="Iced Fragola Spritz" data-price="5.5">Add +</button></div></div>
+      <div class="menu-item special" data-name="white chocolate berry mocha"><div><h4>White Choc Berry Mocha</h4><p>White chocolate + strawberry</p></div><div class="price"><b>$6.10</b><button class="btn btn-sm" data-order="White Choc Berry Mocha" data-price="6.1">Add +</button></div></div>
+    </div></div>
+    <div class="menu-panel" id="panel-brewed"><div class="menu-grid">
+      <div class="menu-item" data-name="pour over v60 ethiopia colombia"><div><h4>Pour Over V60</h4><p>Ethiopia / Colombia single origin</p></div><div class="price"><b>$5.00</b><button class="btn btn-sm" data-order="Pour Over V60" data-price="5">Add +</button></div></div>
+      <div class="menu-item" data-name="french press for two"><div><h4>French Press (for 2)</h4><p>Full-bodied, chocolate notes</p></div><div class="price"><b>$7.50</b><button class="btn btn-sm" data-order="French Press" data-price="7.5">Add +</button></div></div>
+      <div class="menu-item" data-name="cold brew 18 hour"><div><h4>Cold Brew</h4><p>18-hr steep, smooth & sweet</p></div><div class="price"><b>$5.20</b><button class="btn btn-sm" data-order="Cold Brew" data-price="5.2">Add +</button></div></div>
+      <div class="menu-item" data-name="iced latte iced mocha chilled"><div><h4>Iced Latte / Iced Mocha</h4><p>Chilled milk over ice</p></div><div class="price"><b>$5.30</b><button class="btn btn-sm" data-order="Iced Latte" data-price="5.3">Add +</button></div></div>
+      <div class="menu-item" data-name="hot chocolate belgian dark"><div><h4>Hot Chocolate</h4><p>Belgian dark, whipped cream</p></div><div class="price"><b>$4.60</b><button class="btn btn-sm" data-order="Hot Chocolate" data-price="4.6">Add +</button></div></div>
+      <div class="menu-item" data-name="chai matcha latte spiced"><div><h4>Chai / Matcha Latte</h4><p>Spiced or ceremonial green</p></div><div class="price"><b>$5.00</b><button class="btn btn-sm" data-order="Chai Latte" data-price="5">Add +</button></div></div>
+    </div></div>
+    <div class="menu-panel" id="panel-breakfast"><div class="menu-grid">
+      <div class="menu-item" data-name="fragola breakfast plate eggs avocado"><div><h4>Fragola Breakfast Plate <span class="tag hot">Popular</span></h4><p>Eggs, avocado, toast, berries</p></div><div class="price"><b>$9.90</b><button class="btn btn-sm" data-order="Fragola Breakfast Plate" data-price="9.9">Add +</button></div></div>
+      <div class="menu-item" data-name="butter croissant baked morning"><div><h4>Butter Croissant</h4><p>Baked 6 AM daily 🥐</p></div><div class="price"><b>$3.50</b><button class="btn btn-sm" data-order="Butter Croissant" data-price="3.5">Add +</button></div></div>
+      <div class="menu-item" data-name="strawberry pancakes maple"><div><h4>Strawberry Pancakes</h4><p>Stack, maple, fresh fragola</p></div><div class="price"><b>$8.50</b><button class="btn btn-sm" data-order="Strawberry Pancakes" data-price="8.5">Add +</button></div></div>
+      <div class="menu-item" data-name="avocado toast sourdough egg"><div><h4>Avocado Toast</h4><p>Sourdough, poached egg</p></div><div class="price"><b>$7.80</b><button class="btn btn-sm" data-order="Avocado Toast" data-price="7.8">Add +</button></div></div>
+      <div class="menu-item" data-name="greek yogurt bowl granola honey"><div><h4>Greek Yogurt Bowl</h4><p>Granola, honey, berries</p></div><div class="price"><b>$6.90</b><button class="btn btn-sm" data-order="Yogurt Bowl" data-price="6.9">Add +</button></div></div>
+      <div class="menu-item" data-name="club sandwich fries"><div><h4>Club Sandwich + Fries</h4><p>All-day favorite</p></div><div class="price"><b>$8.90</b><button class="btn btn-sm" data-order="Club Sandwich" data-price="8.9">Add +</button></div></div>
+    </div></div>
+    <div class="menu-panel" id="panel-dessert"><div class="menu-grid">
+      <div class="menu-item" data-name="strawberry cheesecake berry must try"><div><h4>Strawberry Cheesecake <span class="tag hot">Must Try</span></h4><p>NY style, berry compote</p></div><div class="price"><b>$6.50</b><button class="btn btn-sm" data-order="Fragola Cheesecake" data-price="6.5">Add +</button></div></div>
+      <div class="menu-item" data-name="tiramisu classico mascarpone"><div><h4>Tiramisu Classico</h4><p>Espresso-soaked, mascarpone</p></div><div class="price"><b>$6.20</b><button class="btn btn-sm" data-order="Tiramisu" data-price="6.2">Add +</button></div></div>
+      <div class="menu-item" data-name="chocolate fondant molten gelato"><div><h4>Chocolate Fondant</h4><p>Molten center, vanilla gelato</p></div><div class="price"><b>$7.00</b><button class="btn btn-sm" data-order="Chocolate Fondant" data-price="7">Add +</button></div></div>
+      <div class="menu-item" data-name="carrot red velvet cake cream cheese"><div><h4>Carrot / Red Velvet Cake</h4><p>Cream cheese frosting</p></div><div class="price"><b>$5.80</b><button class="btn btn-sm" data-order="Red Velvet Cake" data-price="5.8">Add +</button></div></div>
+      <div class="menu-item" data-name="croissant almond frangipane"><div><h4>Almond Croissant</h4><p>Twice-baked, frangipane</p></div><div class="price"><b>$4.20</b><button class="btn btn-sm" data-order="Almond Croissant" data-price="4.2">Add +</button></div></div>
+      <div class="menu-item" data-name="gelato scoops flavors"><div><h4>Gelato (3 scoops)</h4><p>Ask for daily flavors 🍨</p></div><div class="price"><b>$5.50</b><button class="btn btn-sm" data-order="Gelato" data-price="5.5">Add +</button></div></div>
+    </div></div>
+    <div class="menu-panel" id="panel-vegan"><div class="menu-grid">
+      <div class="menu-item" data-name="vegan oat latte almond soy"><div><h4>Oat Milk Latte <span class="tag">Vegan</span></h4><p>Creamy oat, double shot</p></div><div class="price"><b>$5.30</b><button class="btn btn-sm" data-order="Oat Milk Latte" data-price="5.3">Add +</button></div></div>
+      <div class="menu-item" data-name="vegan berry smoothie bowl"><div><h4>Berry Smoothie Bowl <span class="tag">Vegan</span></h4><p>Acai, banana, granola</p></div><div class="price"><b>$7.50</b><button class="btn btn-sm" data-order="Smoothie Bowl" data-price="7.5">Add +</button></div></div>
+      <div class="menu-item" data-name="vegan avocado toast gluten free"><div><h4>Vegan Avocado Toast</h4><p>Gluten-free option available</p></div><div class="price"><b>$7.90</b><button class="btn btn-sm" data-order="Vegan Avocado Toast" data-price="7.9">Add +</button></div></div>
+      <div class="menu-item" data-name="vegan chocolate cake dairy free"><div><h4>Vegan Choc Cake <span class="tag">New</span></h4><p>Dairy-free, rich & moist</p></div><div class="price"><b>$5.90</b><button class="btn btn-sm" data-order="Vegan Choc Cake" data-price="5.9">Add +</button></div></div>
+    </div></div>
+    <p class="tiny center" id="noResult" style="display:none">😕 No dish found — try “latte”, “cake” or “vegan”.</p>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="section section-dark offers" id="offers">
+  <div class="container">
+    <div class="center"><span class="eyebrow light">🎁 Limited Time</span><h2>Weekend Brunch Fest — 20% OFF</h2><p class="sub">Show code <b class="coupon" id="coupon">FRAGOLA20</b> <button class="copy-btn" id="copyBtn">Copy</button></p></div>
+    <div class="countdown glass" id="countdown">
+      <div><b id="cdD">00</b><span>Days</span></div><div><b id="cdH">00</b><span>Hours</span></div><div><b id="cdM">00</b><span>Mins</span></div><div><b id="cdS">00</b><span>Secs</span></div>
+    </div>
+    <div class="cards offers-grid">
+      <div class="offer-card"><h3>☕ Happy Hours</h3><p>3–5 PM daily: any large latte + croissant <b>$6.99</b></p></div>
+      <div class="offer-card hot"><h3>🍓 Fragola Club</h3><p>Buy 8 get 1 FREE + birthday 10% off. Free to join!</p><a href="#reserve" class="btn btn-primary btn-sm">Join Free</a></div>
+      <div class="offer-card"><h3>🎓 Student Deal</h3><p>15% off with student ID + free WiFi all day for study.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-cream" id="gallery">
+  <div class="container">
+    <div class="center"><span class="eyebrow">📸 Vibes</span><h2>Inside Fragola</h2><p class="sub">Tap any photo to view • Terrace • Latte art • Fresh bakes</p></div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80&auto=format&fit=crop" alt="Cafe table" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&auto=format&fit=crop" alt="Coffee cup" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80&auto=format&fit=crop" alt="Cafe interior" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80&auto=format&fit=crop" alt="Coffee shop counter" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&q=80&auto=format&fit=crop" alt="Cafe exterior terrace" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&auto=format&fit=crop" alt="Coffee and laptop work zone" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="center"><span class="eyebrow">👨‍🍳 Masters</span><h2>Meet Our Baristas</h2><p class="sub">Latte-art champions & dessert artists</p></div>
+    <div class="cards team-grid">
+      <article class="card team hover-lift"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80&auto=format&fit=crop" alt="Marco - Head Barista" loading="lazy"><div class="card-body"><h3>Marco Rossi 🇮🇹</h3><p>Head Barista • 10 yrs • Latte-art champion 2023</p><small>☕ Signature: Flat White</small></div></article>
+      <article class="card team hover-lift"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80&auto=format&fit=crop" alt="Sofia - Pastry Chef" loading="lazy"><div class="card-body"><h3>Sofia Lane 🍰</h3><p>Pastry Chef • Strawberry cheesecake queen</p><small>🍓 Signature: Fragola Cheesecake</small></div></article>
+      <article class="card team hover-lift"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80&auto=format&fit=crop" alt="Daniel - Brew Specialist" loading="lazy"><div class="card-body"><h3>Daniel K. 🫘</h3><p>Brew Specialist • V60 & cold brew nerd</p><small>🔬 Signature: Pour Over Ethiopia</small></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section section-cream" id="reviews">
+  <div class="container">
+    <div class="center"><span class="eyebrow">💌 Love Notes</span><h2>4.9 ★ from 2,500+ Guests</h2>
+      <div class="rating-row"><span>Google 4.9</span><span>•</span><span>TripAdvisor 5.0</span><span>•</span><span>Foodpanda 4.8</span></div>
+    </div>
+    <div class="slider glass" id="slider">
+      <div class="slides" id="slides">
+        <div class="slide"><div class="avatar">S</div><p>“Best strawberry latte I've ever had! Cozy, fast WiFi, perfect for work. Staff remembers my name.”</p><b>— Sofia M. ★★★★★</b><small>Regular since 2021 • 40+ visits</small></div>
+        <div class="slide"><div class="avatar">D</div><p>“Cheesecake + cappuccino = heaven. Kid-friendly, terrace is lovely in the evening.”</p><b>— Daniel K. ★★★★★</b><small>Google Review • Family dinner</small></div>
+        <div class="slide"><div class="avatar">A</div><p>“Beautiful interior, great breakfast plate, quick delivery. Our weekend ritual now.”</p><b>— Amira & John ★★★★★</b><small>Weekend regulars</small></div>
+        <div class="slide"><div class="avatar">R</div><p>“Worked here 5 hours, coffee kept coming, no one rushed me. Ideal freelancer spot!”</p><b>— Rafid H. ★★★★★</b><small>Freelancer • Work zone fan</small></div>
+      </div>
+      <div class="dots" id="dots"></div>
+      <div class="slider-btns"><button id="prev" aria-label="Previous">‹</button><button id="next" aria-label="Next">›</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container faq-wrap">
+    <div class="center"><span class="eyebrow">❓ Good to know</span><h2>Frequently Asked Questions</h2></div>
+    <div class="accordion">
+      <div class="acc"><button class="acc-btn">🕒 What are your opening hours?<span>+</span></button><div class="acc-body"><p>Mon–Fri 7AM–11PM, Sat–Sun 8AM–11PM. Breakfast till 12PM, brunch weekends till 2PM. Kitchen closes 10:30PM.</p></div></div>
+      <div class="acc"><button class="acc-btn">🛵 Do you deliver? How long?<span>+</span></button><div class="acc-body"><p>Yes! ~15 min within 5 km via our riders + Foodpanda. Free delivery over $20. Eco packaging.</p></div></div>
+      <div class="acc"><button class="acc-btn">🌱 Vegan / gluten-free / halal options?<span>+</span></button><div class="acc-body"><p>Yes — oat/almond/soy milk, vegan cake & bowls, gluten-free toast, all meat halal. Ask staff for allergen chart.</p></div></div>
+      <div class="acc"><button class="acc-btn">📶 Can I work / study here?<span>+</span></button><div class="acc-body"><p>Absolutely! Quiet work zone, 200 Mbps WiFi, plugs at every table. No time limit on weekdays.</p></div></div>
+      <div class="acc"><button class="acc-btn">🎉 Birthday / events / catering?<span>+</span></button><div class="acc-body"><p>Yes for up to 80 guests. Custom cake + barista bar. Call +1 (00) 123-4567 at least 3 days ahead.</p></div></div>
+      <div class="acc"><button class="acc-btn">🐾 Pet friendly?<span>+</span></button><div class="acc-body"><p>Yes on the terrace! Free puppuccino for furry friends. 🐶</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section section-dark" id="visit">
+  <div class="container visit-grid">
+    <div>
+      <span class="eyebrow light">📍 Find Us</span>
+      <h2>Visit Fragola Cafe</h2>
+      <ul class="visit-list">
+        <li>📍 <b>123 Berry Street, Downtown</b><br><small>2 min from Central Park • Parking behind building</small></li>
+        <li>🕒 <b id="hoursToday">Open Now • Closes 11:00 PM</b><br><small>Breakfast till 12 PM • Brunch Sat-Sun till 2 PM</small></li>
+        <li>📞 <b><a href="tel:+10012345678">+1 (00) 123-4567</a></b> • ✉️ <b><a href="mailto:hello@fragolacafe.com">hello@fragolacafe.com</a></b></li>
+        <li>📱 <b>@fragola.cafe</b> Instagram / TikTok / Facebook</li>
+      </ul>
+      <table class="hours-table">
+        <tr><td>Mon – Fri</td><td>7:00 AM – 11:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM – 10:30 PM</td></tr>
+      </table>
+      <div class="row-btns">
+        <a class="btn btn-primary shine" href="https://maps.google.com/?q=Berry+Street+Downtown" target="_blank" rel="noopener">🧭 Get Directions</a>
+        <a class="btn btn-outline light" href="tel:+10012345678">📞 Call Us</a>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <iframe title="Fragola Cafe map" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1357%2C51.4975%2C-0.0957%2C51.5175&layer=mapnik" loading="lazy"></iframe>
+      <div class="hours-card glass"><h4>☕ Today</h4><p id="hoursToday2">Open Now</p><small>Kitchen closes 10:30 PM</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section class="section section-cream" id="reserve">
+  <div class="container reserve-grid">
+    <div class="reserve-info">
+      <span class="eyebrow">📅 Reserve / Order</span>
+      <h2>Book a Table or Order Ahead</h2>
+      <p>Reserve in 30 seconds. Parties over 8? Please call us directly.</p>
+      <div class="order-box glass">
+        <h4>🛒 Your Order <span id="cartCount">(0)</span></h4>
+        <ul id="cartList"><li class="muted">No items yet — tap “Add +” on menu.</li></ul>
+        <div class="total-row"><b>Total: <span id="cartTotal">$0.00</span></b><button class="btn btn-sm" id="clearCart">Clear</button></div>
+      </div>
+      <ul class="check-list">
+        <li>✅ Free SMS confirmation in 5 min</li>
+        <li>✅ Terrace / indoor / work-zone seating</li>
+        <li>✅ Takeaway ready in ~15 min</li>
+      </ul>
+    </div>
+    <form class="form glass" id="bookForm" novalidate>
+      <h3>✨ Reservation Form</h3>
+      <div class="form-row">
+        <label>Name*<input type="text" id="fName" placeholder="Your name" required autocomplete="name"></label>
+        <label>Phone*<input type="tel" id="fPhone" placeholder="+1 ..." required autocomplete="tel"></label>
+      </div>
+      <div class="form-row">
+        <label>Date*<input type="date" id="fDate" required></label>
+        <label>Time*<input type="time" id="fTime" value="10:00" required></label>
+      </div>
+      <div class="form-row">
+        <label>Guests*<select id="fGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></label>
+        <label>Type<select id="fType"><option>Dine-in</option><option>Terrace</option><option>Takeaway</option><option>Delivery</option></select></label>
+      </div>
+      <label>Notes<textarea id="fNotes" rows="3" placeholder="Allergies, birthday, window seat, coupon FRAGOLA20..."></textarea></label>
+      <button type="submit" class="btn btn-primary btn-lg btn-block shine">Confirm Booking 🎉</button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container news-box glass">
+    <h2>🍓 Get 10% OFF your first visit!</h2>
+    <p>Join 5,000+ coffee lovers. New drinks, secret offers, no spam.</p>
+    <form id="newsForm" class="news-form"><input type="email" id="newsEmail" placeholder="Your email address" required aria-label="Email"><button class="btn btn-primary shine" type="submit">Claim 10% 🎁</button></form>
+    <small id="newsMsg"></small>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo light">🍓 <span>Fragola</span> Cafe</a>
+      <p>Artisan coffee, fresh strawberries & homemade happiness since 2013.</p>
+      <div class="socials"><a href="#" aria-label="Instagram">📸</a><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="TikTok">🎵</a><a href="https://wa.me/10012345678" aria-label="WhatsApp">💬</a></div>
+    </div>
+    <div><h4>Explore</h4><a href="#about">About</a><a href="#services">Services</a><a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#reserve">Book Table</a></div>
+    <div><h4>Contact</h4><p>📍 123 Berry Street<br>📞 +1 (00) 123-4567<br>✉️ hello@fragolacafe.com<br>⏰ Daily 7AM-11PM</p></div>
+    <div><h4>Top Picks</h4><p>🍓 Cloud Latte $5.90<br>🍰 Cheesecake $6.50<br>🥐 Croissant $3.50<br>🎁 Gift cards available</p></div>
+  </div>
+  <div class="footer-bottom">© 2026 Fragola Cafe • Made with ❤️ & ☕ • <a href="#home">Back to top ↑</a></div>
+</footer>
+
+<!-- Cart Drawer -->
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Cart">
+  <div class="drawer-head"><h3>🛒 Your Order <span id="cartCount2">(0)</span></h3><button class="icon-btn" id="cartClose">✕</button></div>
+  <ul id="cartList2"><li class="muted">Cart is empty.</li></ul>
+  <div class="drawer-foot"><b>Total: <span id="cartTotal2">$0.00</span></b>
+  <a href="#reserve" class="btn btn-primary btn-block" id="checkoutBtn">Checkout / Book →</a>
+  <a class="btn btn-whats btn-block" id="waOrder" target="_blank" rel="noopener" href="#">💬 Order via WhatsApp</a></div>
+</aside>
+
+<!-- Mobile sticky bar -->
+<div class="mobile-bar glass">
+  <a href="tel:+10012345678" class="mb-btn">📞 Call</a>
+  <a href="#menu" class="mb-btn">☕ Menu</a>
+  <a href="#offers" class="mb-btn">🎁 Offers</a>
+  <a href="#reserve" class="mb-btn primary shine">✨ Book</a>
+</div>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<div class="lightbox" id="lightbox"><img id="lightboxImg" alt="Gallery preview"><span>✕ tap to close</span></div>
+<script src="script.js"></script>
+</body>
+</html>
